@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import SkillList from "./SkillList";
 
@@ -11,7 +10,6 @@ function Skills() {
         </p>
         <h2>What I Can Do</h2>
         <SkillList />
-
       </div>
     </div>
   );

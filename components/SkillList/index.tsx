@@ -3,7 +3,7 @@ import Skill from "./Skill";
 import HtmlImg from "../../public/assets/skills/html.png";
 import CssImg from "../../public/assets/skills/css.png";
 import JSImg from "../../public/assets/skills/javascript.png";
-import TSImg from "../../public/assets/skills/typescript.png";
+import TSImg from "../../public/assets/skills/typescript.jpg";
 import ReactImg from "../../public/assets/skills/react.png";
 import NextJSImg from "../../public/assets/skills/nextjs.png";
 import TailwindImg from "../../public/assets/skills/tailwind.png";
