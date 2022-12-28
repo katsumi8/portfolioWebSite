@@ -4,7 +4,7 @@ import kanpaiListImg from "../public/assets/projects/kanpaiList.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-function property() {
+function kanpaiList() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -88,4 +88,4 @@ function property() {
   );
 }
 
-export default property;
+export default kanpaiList;

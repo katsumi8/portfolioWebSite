@@ -1,9 +1,8 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import kanpaiListImg from "../public/assets/projects/kanpaiList.png";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
-import netflixImg from "../public/assets/projects/netflix.jpg";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import cafeReservationAdminImg from "../public/assets/projects/cafeReservationAdmin.png";
+import cafeReservationImg from "../public/assets/projects/cafeReservation.png";
 
 function Projects() {
   return (
@@ -18,21 +17,19 @@ function Projects() {
             title="Sold Out List"
             backgroundImg={kanpaiListImg}
             projectUrl="/kanpaiList"
+            mainTech={"React JS"}
           />
           <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
+            title="Cafe Reservation"
+            backgroundImg={cafeReservationImg}
+            projectUrl="/cafeReservation"
+            mainTech={"Next JS / GraphQL"}
           />
           <ProjectItem
-            title="Netflix App"
-            backgroundImg={netflixImg}
-            projectUrl="/netflix"
-          />
-          <ProjectItem
-            title="Twitch App"
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
+            title="Cafe Reservation - Admin"
+            backgroundImg={cafeReservationAdminImg}
+            projectUrl="/cafeReservationAdmin"
+            mainTech={"Next JS / GraphQL"}
           />
         </div>
       </div>

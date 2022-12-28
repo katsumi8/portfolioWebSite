@@ -11,6 +11,7 @@ import NodeImg from "../../public/assets/skills/node.png";
 import GraphQLImg from "../../public/assets/skills/graphql.png";
 import PrismaImg from "../../public/assets/skills/prisma.png";
 import PostgreSQLImg from "../../public/assets/skills/postgresql.png";
+import mongoImg from "../../public/assets/skills/mongo.png";
 
 const SkillList = () => {
   return (
@@ -26,6 +27,8 @@ const SkillList = () => {
       <Skill skillName={"GraphQL"} imgRawData={GraphQLImg} />
       <Skill skillName={"Prisma"} imgRawData={PrismaImg} />
       <Skill skillName={"PostgreSQL"} imgRawData={PostgreSQLImg} />
+      <Skill skillName={"MongoDB"} imgRawData={mongoImg} />
+
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import cafeReservationAdminImg from "../public/assets/projects/cafeReservationAdmin.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-function netflix() {
+function cafeReservationAdmin() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -12,7 +12,7 @@ function netflix() {
         <Image
           className="absolute z-1 object-cover"
           fill={true}
-          src={twitchImg}
+          src={cafeReservationAdminImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -23,20 +23,40 @@ function netflix() {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup and signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
+            This app was built using Next and is hosted on Vercel. For the
+            backend, this app is built using GraphQL and prisma and Typescript
+            and is hosted XXX. Users are able to reserve a table and also select
+            which table they want to have.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4 ">Code</button>
+          <h4>【Problem】</h4>
+          <p>
+            Customers cannot choose a seat. Sometimes even customers reserve a
+            seat but when they came, there is only tables outside available. And
+            they were not happy.
+          </p>
+          <h5>【Effect】</h5>
+          <p>
+            Users now can choose which table they want to sit before coming so
+            that there is no gap about where to sit.
+          </p>
+          <button
+            className="px-8 py-2 mt-4 mr-8"
+            // onClick={() => window.open("")}
+          >
+            Demo
+          </button>
+          <button
+            className="px-8 py-2 mt-4F"
+            onClick={() =>
+              window.open(
+                "https://github.com/katsumi8/reservation-frontend-admin"
+              )
+            }
+          >
+            Code
+          </button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -44,7 +64,7 @@ function netflix() {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React
+                Next
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
@@ -52,19 +72,15 @@ function netflix() {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Javascript
+                Typescript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Firebase
+                Graph QL
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Google API
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Zillow API
+                PostgreSQL
               </p>
             </div>
           </div>
@@ -77,4 +93,4 @@ function netflix() {
   );
 }
 
-export default netflix;
+export default cafeReservationAdmin;
