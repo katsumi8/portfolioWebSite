@@ -59,7 +59,6 @@ export const useForm = () => {
     setValues({ ...values, isSubmitted: true });
 
     if (Object.keys(formErrors).length === 0) {
-      console.log("email is sent");
       emailjs
         .sendForm(
           process.env.NEXT_PUBLIC_SERVICE_ID as string,
