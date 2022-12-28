@@ -4,7 +4,7 @@ import ContactImg from "../public/assets/contact.jpg";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
 import IconItems from "./contactItems/IconItems";
-import Form from "./Form/index";
+import Form from "./Form";
 
 function Contact() {
   return (
