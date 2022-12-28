@@ -1,4 +1,3 @@
-import next from "next";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
+import NavLogoImg from "../public/assets/navLogo.png";
 
 type RGB = `rgb(${number}, ${number}, ${number})`;
 type RGBA = `rgba(${number}, ${number}, ${number}, ${number})`;
@@ -62,7 +62,7 @@ function Navbar() {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href={"/"}>
           <Image
-            src="/../public/assets/navLogo.png"
+            src={NavLogoImg}
             alt="/"
             width="125"
             height="50"
