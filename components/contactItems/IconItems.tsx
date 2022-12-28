@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import IconItem from "./IconItem";
-import Link from "next/link";
 
 type IconItemsProps = {
   style: "CONTACT" | "MAIN";
