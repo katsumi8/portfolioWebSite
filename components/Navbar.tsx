@@ -7,6 +7,8 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import NavLogoImg from "../public/assets/navLogo.png";
 
+
+
 type RGB = `rgb(${number}, ${number}, ${number})`;
 type RGBA = `rgba(${number}, ${number}, ${number}, ${number})`;
 type HEX = `#${string}`;
@@ -113,7 +115,7 @@ function Navbar() {
             <div className="flex w-full justify-between items-center">
               <Link href={"/"}>
                 <Image
-                  src="/../public/assets/navLogo.png"
+                  src={NavLogoImg}
                   alt="/"
                   width="87"
                   height="35"
@@ -162,7 +164,7 @@ function Navbar() {
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
-                Lets connect
+                Let's connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
@@ -187,6 +189,4 @@ function Navbar() {
 }
 
 export default Navbar;
-function usestate(): [any, any] {
-  throw new Error("Function not implemented.");
-}
+
