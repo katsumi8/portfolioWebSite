@@ -43,7 +43,7 @@ function cafeReservationAdmin() {
           </p>
           <button
             className="px-8 py-2 mt-4 mr-8"
-            // onClick={() => window.open("")}
+            onClick={() => window.open("https://reservation-frontend-admin.vercel.app/")}
           >
             Demo
           </button>

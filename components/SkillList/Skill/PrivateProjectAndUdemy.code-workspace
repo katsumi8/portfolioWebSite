@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "個人プロジェクト",
+			"path": "../../../.."
+		},
+		{
+			"name": "ts-design-pattern",
+			"path": "../../../../../Downloads/ts-design-pattern"
+		},
+		{
+			"name": "Udemy",
+			"path": "../../../../../Udemy"
+		}
+	],
+	"settings": {}
+}

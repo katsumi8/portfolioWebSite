@@ -7,19 +7,17 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import NavLogoImg from "../public/assets/navLogo.png";
 
-
-
 type RGB = `rgb(${number}, ${number}, ${number})`;
 type RGBA = `rgba(${number}, ${number}, ${number}, ${number})`;
 type HEX = `#${string}`;
-
 type Color = RGB | RGBA | HEX;
+type BackGroundColor = Color | "transparent" | "initial" | "inherit";
 
 function Navbar() {
   const [nav, setNav] = useState<boolean>(false);
   const [shadow, setShadow] = useState<boolean>(false);
-  const [navBg, setNavBg] = useState<string>("#ecf0f3");
-  const [linkColor, setLinkColor] = useState<string>("#1f2937");
+  const [navBg, setNavBg] = useState<BackGroundColor>("#ecf0f3");
+  const [linkColor, setLinkColor] = useState<BackGroundColor>("#1f2937");
   const router = useRouter();
 
   useEffect(() => {
@@ -63,12 +61,7 @@ function Navbar() {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href={"/"}>
-          <Image
-            src={NavLogoImg}
-            alt="/"
-            width="125"
-            height="50"
-          />
+          <Image src={NavLogoImg} alt="/" width="125" height="50" />
         </Link>
 
         <div>
@@ -114,12 +107,7 @@ function Navbar() {
           <div>
             <div className="flex w-full justify-between items-center">
               <Link href={"/"}>
-                <Image
-                  src={NavLogoImg}
-                  alt="/"
-                  width="87"
-                  height="35"
-                />
+                <Image src={NavLogoImg} alt="/" width="87" height="35" />
               </Link>
               <div
                 onClick={handleNav}
@@ -189,4 +177,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
