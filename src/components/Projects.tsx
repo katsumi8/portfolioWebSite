@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import kanpaiListImg from "../public/assets/projects/kanpaiList.png";
-import cafeReservationAdminImg from "../public/assets/projects/cafeReservationAdmin.png";
-import cafeReservationImg from "../public/assets/projects/cafeReservation.png";
+import kanpaiListImg from "../../public/assets/projects/kanpaiList.png";
+import cafeReservationAdminImg from "../../public/assets/projects/cafeReservationAdmin.png";
+import cafeReservationImg from "../../public/assets/projects/cafeReservation.png";
 
 function Projects() {
   return (

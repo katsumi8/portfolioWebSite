@@ -1,5 +1,5 @@
 import React from "react";
-import IconItems from "./contactItems/IconItems";
+import IconItems from "./ConnectWithMe/IconItems";
 
 function Main() {
   return (

@@ -5,13 +5,8 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-import NavLogoImg from "../public/assets/navLogo.png";
-
-type RGB = `rgb(${number}, ${number}, ${number})`;
-type RGBA = `rgba(${number}, ${number}, ${number}, ${number})`;
-type HEX = `#${string}`;
-type Color = RGB | RGBA | HEX;
-type BackGroundColor = Color | "transparent" | "initial" | "inherit";
+import NavLogoImg from "../../public/assets/navLogo.png";
+import { BackGroundColor } from "@src/types/state"; 
 
 function Navbar() {
   const [nav, setNav] = useState<boolean>(false);
@@ -22,10 +17,9 @@ function Navbar() {
 
   useEffect(() => {
     if (
-      router.asPath === "/property" ||
-      router.asPath === "/crypto" ||
-      router.asPath === "/netflix" ||
-      router.asPath === "/twitch"
+      router.asPath === "/cafeReservation" ||
+      router.asPath === "/cafeReservationAdmin" ||
+      router.asPath === "/kanpaiList"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
@@ -59,7 +53,7 @@ function Navbar() {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         <Link href={"/"}>
           <Image src={NavLogoImg} alt="/" width="125" height="50" />
         </Link>
@@ -105,24 +99,24 @@ function Navbar() {
           }
         >
           <div>
-            <div className="flex w-full justify-between items-center">
+            <div className="flex items-center justify-between w-full">
               <Link href={"/"}>
                 <Image src={NavLogoImg} alt="/" width="87" height="35" />
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
               >
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
+            <div className="my-4 border-b border-gray-300">
               <p className="w-[85%] md:w-[90%] py-4">
                 Let's build something legendary together
               </p>
             </div>
           </div>
-          <div className="py-4 flex flex-col">
+          <div className="flex flex-col py-4">
             <ul className="uppercase">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
@@ -155,16 +149,16 @@ function Navbar() {
                 Let's connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                   <FaLinkedinIn />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                   <FaGithub />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                   <BsFillPersonLinesFill />
                 </div>
               </div>

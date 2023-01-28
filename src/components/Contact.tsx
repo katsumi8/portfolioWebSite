@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import ContactImg from "../public/assets/contact.jpg";
+import ContactImg from "../../public/assets/contact.jpg";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
-import IconItems from "./contactItems/IconItems";
-import Form from "./formComponents/Form";
+import IconItems from "./ConnectWithMe/IconItems";
+import Form from "./Form";
 
 function Contact() {
   return (
@@ -14,13 +14,13 @@ function Contact() {
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="grid gap-8 lg:grid-cols-5">
           {/* left side */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
-            <div className="lg:p-4 h-full">
+          <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 shadow-gray-400 rounded-xl">
+            <div className="h-full lg:p-4">
               <div>
                 <Image
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
+                  className="duration-300 ease-in rounded-xl hover:scale-105"
                   src={ContactImg}
                   alt="/"
                 />
@@ -33,13 +33,13 @@ function Contact() {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With me</p>
+                <p className="pt-8 uppercase">Connect With me</p>
                 <IconItems style={"CONTACT"} />
               </div>
             </div>
           </div>
           {/* Right side */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="w-full h-auto col-span-3 shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <Form />
             </div>
@@ -47,7 +47,7 @@ function Contact() {
         </div>
         <div className="flex justify-center py-12">
           <Link href={"/"}>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>
           </Link>
