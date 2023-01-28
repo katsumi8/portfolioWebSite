@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import kanpaiListImg from "../../public/assets/projects/kanpaiList.png";
 import cafeReservationAdminImg from "../../public/assets/projects/cafeReservationAdmin.png";
 import cafeReservationImg from "../../public/assets/projects/cafeReservation.png";
+import comingSoonImg from "../../public/assets/projects/comingSoon.jpg";
 
 function Projects() {
   return (
@@ -12,7 +13,7 @@ function Projects() {
           Projects
         </p>
         <h2 className="py-4">What I've Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid gap-8 md:grid-cols-2">
           <ProjectItem
             title="Sold Out List"
             backgroundImg={kanpaiListImg}
@@ -30,6 +31,12 @@ function Projects() {
             backgroundImg={cafeReservationAdminImg}
             projectUrl="/cafeReservationAdmin"
             mainTech={"Next JS / GraphQL"}
+          />
+          <ProjectItem
+            title="Inventory Management - Admin"
+            backgroundImg={comingSoonImg}
+            projectUrl="/inventory-management"
+            mainTech={"Next JS"}
           />
         </div>
       </div>
