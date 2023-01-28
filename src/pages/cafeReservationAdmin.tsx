@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import cafeReservationAdminImg from "../public/assets/projects/cafeReservationAdmin.png";
+import cafeReservationAdminImg from "../../public/assets/projects/cafeReservationAdmin.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ function cafeReservationAdmin() {
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image
-          className="absolute z-1 object-cover"
+          className="absolute object-cover z-1"
           fill={true}
           src={cafeReservationAdminImg}
           alt="/"
@@ -58,27 +58,27 @@ function cafeReservationAdmin() {
             Code
           </button>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="col-span-4 p-4 shadow-xl md:col-span-1 shadow-gray-400 rounded-xl">
           <div className="p-2">
-            <p className="text-center font-bold pb-2">Technologies</p>
+            <p className="pb-2 font-bold text-center">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" />
                 Next JS
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" />
                 Tailwind
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" />
                 Typescript
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" />
                 Graph QL
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" />
                 PostgreSQL
               </p>
