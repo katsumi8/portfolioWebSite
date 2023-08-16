@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import NavLogoImg from "../../public/assets/navLogo.png";
-import { BackGroundColor } from "@src/types/state"; 
+import { BackGroundColor } from "@src/types/state";
 
 function Navbar() {
   const [nav, setNav] = useState<boolean>(false);
@@ -49,11 +49,11 @@ function Navbar() {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed z-[100] h-20 w-full shadow-xl"
+          : "fixed z-[100] h-20 w-full"
       }
     >
-      <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
+      <div className="flex h-full w-full items-center justify-between px-2 2xl:px-16">
         <Link href={"/"}>
           <Image src={NavLogoImg} alt="/" width="125" height="50" />
         </Link>
@@ -88,30 +88,30 @@ function Navbar() {
 
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "fixed left-0 top-0 h-screen w-full bg-black/70 md:hidden" : ""
         }
       >
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 h-screen w-[75%] bg-[#ecf0f3] p-10 duration-500 ease-in sm:w-[60%] md:w-[45%]"
+              : "fixed left-[-100%] top-0 p-10 duration-500 ease-in"
           }
         >
           <div>
-            <div className="flex items-center justify-between w-full">
+            <div className="flex w-full items-center justify-between">
               <Link href={"/"}>
                 <Image src={NavLogoImg} alt="/" width="87" height="35" />
               </Link>
               <div
                 onClick={handleNav}
-                className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
+                className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400"
               >
                 <AiOutlineClose />
               </div>
             </div>
             <div className="my-4 border-b border-gray-300">
-              <p className="w-[85%] md:w-[90%] py-4">
+              <p className="w-[85%] py-4 md:w-[90%]">
                 Let's build something legendary together
               </p>
             </div>
@@ -148,17 +148,17 @@ function Navbar() {
               <p className="uppercase tracking-widest text-[#5651e5]">
                 Let's connect
               </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+              <div className="my-4 flex w-full items-center justify-between sm:w-[80%]">
+                <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105">
                   <FaLinkedinIn />
                 </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105">
                   <FaGithub />
                 </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105">
                   <AiOutlineMail />
                 </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105">
                   <BsFillPersonLinesFill />
                 </div>
               </div>

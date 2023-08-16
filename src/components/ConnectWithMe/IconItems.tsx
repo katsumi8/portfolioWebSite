@@ -14,7 +14,7 @@ function IconItems({ style }: IconItemsProps) {
       className={
         style === "CONTACT"
           ? "flex items-center justify-between py-4"
-          : "flex items-center justify-between max-w-[330px] m-auto py-4"
+          : "m-auto flex max-w-[330px] items-center justify-between py-4"
       }
     >
       <IconItem

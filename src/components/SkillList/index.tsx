@@ -15,7 +15,7 @@ import mongoImg from "../../../public/assets/skills/mongo.png";
 
 const SkillList = () => {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
       <Skill skillName={"HTML"} imgRawData={HtmlImg} />
       <Skill skillName={"CSS"} imgRawData={CssImg} />
       <Skill skillName={"JavaScript"} imgRawData={JSImg} />
@@ -28,7 +28,6 @@ const SkillList = () => {
       <Skill skillName={"Prisma"} imgRawData={PrismaImg} />
       <Skill skillName={"PostgreSQL"} imgRawData={PostgreSQLImg} />
       <Skill skillName={"MongoDB"} imgRawData={mongoImg} />
-
     </div>
   );
 };

@@ -31,7 +31,7 @@ export const useForm = () => {
   const [formErrors, setFormErrors] = useState<Validations>({});
   //文字入力の度にstate更新
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const target = e.target;
     const value = target.value;
@@ -40,7 +40,7 @@ export const useForm = () => {
   };
 
   const handleFocus = (
-    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement, Element>
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement, Element>,
   ) => {
     const targetName = e.target.name;
     if (Object.keys(formErrors).length !== 0) {
@@ -50,7 +50,6 @@ export const useForm = () => {
 
   useEffect(() => {
     setFormErrors(validate(values));
-
   }, [values]);
 
   //送信ボタンクリック後の処理
@@ -64,7 +63,7 @@ export const useForm = () => {
           process.env.NEXT_PUBLIC_SERVICE_ID as string,
           process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
           e.currentTarget,
-          process.env.NEXT_PUBLIC_PUBLIC_KEY as string
+          process.env.NEXT_PUBLIC_PUBLIC_KEY as string,
         )
         .then(
           (result) => {
@@ -72,7 +71,7 @@ export const useForm = () => {
           },
           (error) => {
             console.log(error.text);
-          }
+          },
         );
     }
   };

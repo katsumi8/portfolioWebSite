@@ -11,19 +11,19 @@ type Props = {
 
 function ProjectItem({ title, backgroundImg, projectUrl, mainTech }: Props) {
   return (
-    <div className="relative flex items-center justify-center h-auto shadow-xl w-full shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+    <div className="group relative flex h-auto w-full items-center justify-center rounded-xl from-[#5651e5] to-[#709dff] p-4 shadow-xl shadow-gray-400 hover:bg-gradient-to-r">
       <Image
         className="rounded-xl group-hover:opacity-10"
         src={backgroundImg}
         alt="/"
       />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-2xl text-white tracking-wider text-center">
+      <div className="absolute top-[50%] left-[50%] hidden translate-x-[-50%] translate-y-[-50%] group-hover:block">
+        <h3 className="text-center text-2xl tracking-wider text-white">
           {title}
         </h3>
-        <p className="pb-4 pt-2 text-white text-center">{mainTech}</p>
+        <p className="pb-4 pt-2 text-center text-white">{mainTech}</p>
         <Link href={projectUrl}>
-          <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+          <p className="cursor-pointer rounded-lg bg-white p-3 text-center text-lg font-bold text-gray-700">
             More Info
           </p>
         </Link>

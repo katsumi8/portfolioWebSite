@@ -12,7 +12,7 @@ function IconItem({ url, children, newTab }: Props) {
       href={url}
       target={newTab ? "_blank" : ""}
       rel={newTab ? "noopener noreferrer" : ""}
-      className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+      className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110"
     >
       {children}
     </a>

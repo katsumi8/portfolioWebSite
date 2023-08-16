@@ -9,18 +9,18 @@ import Form from "./Form";
 function Contact() {
   return (
     <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+      <div className="m-auto w-full max-w-[1240px] px-2 py-16">
+        <p className="text-xl uppercase tracking-widest text-[#5651e5]">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid gap-8 lg:grid-cols-5">
           {/* left side */}
-          <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 shadow-gray-400 rounded-xl">
+          <div className="col-span-3 h-full w-full rounded-xl p-4 shadow-xl shadow-gray-400 lg:col-span-2">
             <div className="h-full lg:p-4">
               <div>
                 <Image
-                  className="duration-300 ease-in rounded-xl hover:scale-105"
+                  className="rounded-xl duration-300 ease-in hover:scale-105"
                   src={ContactImg}
                   alt="/"
                 />
@@ -39,7 +39,7 @@ function Contact() {
             </div>
           </div>
           {/* Right side */}
-          <div className="w-full h-auto col-span-3 shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-3 h-auto w-full rounded-xl shadow-xl shadow-gray-400 lg:p-4">
             <div className="p-4">
               <Form />
             </div>
@@ -47,7 +47,7 @@ function Contact() {
         </div>
         <div className="flex justify-center py-12">
           <Link href={"/"}>
-            <div className="p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
+            <div className="cursor-pointer rounded-full p-4 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>
           </Link>

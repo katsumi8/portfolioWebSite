@@ -4,10 +4,10 @@ import AboutImg from "../../public/assets/about.jpg";
 
 function About() {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+    <div id="about" className="flex w-full items-center p-2 py-16 md:h-screen">
+      <div className="m-auto max-w-[1240px] grid-cols-3 gap-8 md:grid">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+          <p className="text-xl uppercase tracking-widest text-[#5651e5]">
             About
           </p>
           <h2 className="py-4">Who I am</h2>
@@ -30,11 +30,11 @@ function About() {
             managing issue trees to tackle the critical problem. In my spare
             time I learn coding, reading books related business field.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
+          <p className="cursor-pointer py-2 text-gray-600 underline">
             Check out some of my latest projects.
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="m-auto flex h-auto w-full items-center justify-center rounded-xl p-4 shadow-xl shadow-gray-400 duration-300 ease-in hover:scale-105">
           <Image src={AboutImg} className="rounded-xl" alt="/" />
         </div>
       </div>
