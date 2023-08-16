@@ -4,6 +4,7 @@ import kanpaiListImg from "../../public/assets/projects/kanpaiList.png";
 import cafeReservationAdminImg from "../../public/assets/projects/cafeReservationAdmin.png";
 import cafeReservationImg from "../../public/assets/projects/cafeReservation.png";
 import comingSoonImg from "../../public/assets/projects/comingSoon.jpg";
+import inventorySystemImg from "../../public/assets/projects/inventorySystem.png";
 
 function Projects() {
   return (
@@ -34,9 +35,9 @@ function Projects() {
           />
           <ProjectItem
             title="Inventory Management - Admin"
-            backgroundImg={comingSoonImg}
+            backgroundImg={inventorySystemImg}
             projectUrl="/inventory-management"
-            mainTech={"Next JS"}
+            mainTech={"Next JS / Golang Rest API"}
           />
         </div>
       </div>

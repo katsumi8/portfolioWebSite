@@ -11,7 +11,8 @@ import NodeImg from "../../../public/assets/skills/node.png";
 import GraphQLImg from "../../../public/assets/skills/graphql.png";
 import PrismaImg from "../../../public/assets/skills/prisma.png";
 import PostgreSQLImg from "../../../public/assets/skills/postgresql.png";
-import mongoImg from "../../../public/assets/skills/mongo.png";
+import GolangImg from "../../../public/assets/skills/golang.png";
+import RustImg from "../../../public/assets/skills/rust.png";
 
 const SkillList = () => {
   return (
@@ -23,11 +24,12 @@ const SkillList = () => {
       <Skill skillName={"React"} imgRawData={ReactImg} />
       <Skill skillName={"NextJS"} imgRawData={NextJSImg} />
       <Skill skillName={"Tailwind"} imgRawData={TailwindImg} />
+      <Skill skillName={"Golang"} imgRawData={GolangImg} />
       <Skill skillName={"NodeJS"} imgRawData={NodeImg} />
       <Skill skillName={"GraphQL"} imgRawData={GraphQLImg} />
       <Skill skillName={"Prisma"} imgRawData={PrismaImg} />
       <Skill skillName={"PostgreSQL"} imgRawData={PostgreSQLImg} />
-      <Skill skillName={"MongoDB"} imgRawData={mongoImg} />
+      <Skill skillName={"Rust"} imgRawData={RustImg} />
     </div>
   );
 };
