@@ -35,30 +35,34 @@ function InventoryMgmtPage() {
           </p>
           <h5>【Effect】</h5>
           <p>App make it easy for staff to manage inventory stock. </p>
-          <button
-            className="mt-4 mr-8 px-8 py-2"
-            onClick={() =>
-              window.open("https://inventory-front-auth0-9f9h.vercel.app")
-            }
-          >
-            Demo
-          </button>
-          <button
-            className="mt-4 px-8 py-2"
-            onClick={() =>
-              window.open("https://github.com/katsumi8/inventory-front-auth0")
-            }
-          >
-            Code(Frontend)
-          </button>
-          <button
-            className="mt-4 px-8 py-2"
-            onClick={() =>
-              window.open("https://github.com/katsumi8/inventory-golang-auth0")
-            }
-          >
-            Code(Backend)
-          </button>
+          <div className="mt-4 flex space-x-4">
+            <button
+              className="px-8 py-2"
+              onClick={() =>
+                window.open("https://inventory-front-auth0-9f9h.vercel.app")
+              }
+            >
+              Demo
+            </button>
+            <button
+              className="p-2"
+              onClick={() =>
+                window.open("https://github.com/katsumi8/inventory-front-auth0")
+              }
+            >
+              Code(Frontend)
+            </button>
+            <button
+              className="p-2"
+              onClick={() =>
+                window.open(
+                  "https://github.com/katsumi8/inventory-golang-auth0",
+                )
+              }
+            >
+              Code(Backend)
+            </button>
+          </div>
         </div>
         <div className="col-span-4 rounded-xl p-4 shadow-xl shadow-gray-400 md:col-span-1">
           <div className="p-2">

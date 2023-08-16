@@ -41,32 +41,34 @@ function cafeReservationAdmin() {
             Users now can choose which table they want to sit before coming so
             that there is no gap about where to sit.
           </p>
-          <button
-            className="mt-4 mr-8 px-8 py-2"
-            onClick={() =>
-              window.open("https://reservation-frontend-admin.vercel.app/")
-            }
-          >
-            Demo
-          </button>
-          <button
-            className="mt-4F px-8 py-2"
-            onClick={() =>
-              window.open(
-                "https://github.com/katsumi8/reservation-frontend-admin",
-              )
-            }
-          >
-            Code(Frontend)
-          </button>
-          <button
-            className="mt-4F px-8 py-2"
-            onClick={() =>
-              window.open("https://github.com/katsumi8/reservation-backend")
-            }
-          >
-            Code(Backend)
-          </button>
+          <div className="mt-4 flex space-x-4">
+            <button
+              className="px-8 py-2"
+              onClick={() =>
+                window.open("https://reservation-frontend-admin.vercel.app/")
+              }
+            >
+              Demo
+            </button>
+            <button
+              className="p-2"
+              onClick={() =>
+                window.open(
+                  "https://github.com/katsumi8/reservation-frontend-admin",
+                )
+              }
+            >
+              Code(Frontend)
+            </button>
+            <button
+              className="p-2"
+              onClick={() =>
+                window.open("https://github.com/katsumi8/reservation-backend")
+              }
+            >
+              Code(Backend)
+            </button>
+          </div>
         </div>
         <div className="col-span-4 rounded-xl p-4 shadow-xl shadow-gray-400 md:col-span-1">
           <div className="p-2">
