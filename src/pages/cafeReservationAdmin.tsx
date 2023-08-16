@@ -57,7 +57,15 @@ function cafeReservationAdmin() {
               )
             }
           >
-            Code
+            Code(Frontend)
+          </button>
+          <button
+            className="mt-4F px-8 py-2"
+            onClick={() =>
+              window.open("https://github.com/katsumi8/reservation-backend")
+            }
+          >
+            Code(Backend)
           </button>
         </div>
         <div className="col-span-4 rounded-xl p-4 shadow-xl shadow-gray-400 md:col-span-1">

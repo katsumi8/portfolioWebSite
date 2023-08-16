@@ -44,12 +44,20 @@ function InventoryMgmtPage() {
             Demo
           </button>
           <button
-            className="mt-4F px-8 py-2"
+            className="mt-4 px-8 py-2"
+            onClick={() =>
+              window.open("https://github.com/katsumi8/inventory-front-auth0")
+            }
+          >
+            Code(Frontend)
+          </button>
+          <button
+            className="mt-4 px-8 py-2"
             onClick={() =>
               window.open("https://github.com/katsumi8/inventory-golang-auth0")
             }
           >
-            Code
+            Code(Backend)
           </button>
         </div>
         <div className="col-span-4 rounded-xl p-4 shadow-xl shadow-gray-400 md:col-span-1">
