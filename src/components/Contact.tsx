@@ -10,7 +10,7 @@ function Contact() {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="m-auto w-full max-w-[1240px] px-2 py-16">
-        <p className="text-xl uppercase tracking-widest text-[#5651e5]">
+        <p className="text-xl uppercase tracking-widest text-[#990000]">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>

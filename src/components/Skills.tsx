@@ -5,7 +5,7 @@ function Skills() {
   return (
     <div id="skills" className="w-full p-2 lg:h-screen">
       <div className="mx-auto flex h-full max-w-[1240px] flex-col justify-center">
-        <p className="text-xl uppercase tracking-widest text-[#5651e5]">
+        <p className="text-xl uppercase tracking-widest text-[#990000]">
           Skills
         </p>
         <h2>What I Can Do</h2>

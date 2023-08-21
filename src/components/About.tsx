@@ -7,7 +7,7 @@ function About() {
     <div id="about" className="flex w-full items-center p-2 py-16 md:h-screen">
       <div className="m-auto max-w-[1240px] grid-cols-3 gap-8 md:grid">
         <div className="col-span-2">
-          <p className="text-xl uppercase tracking-widest text-[#5651e5]">
+          <p className="text-xl uppercase tracking-widest text-[#990000]">
             About
           </p>
           <h2 className="py-4">Who I am</h2>

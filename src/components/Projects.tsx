@@ -3,14 +3,13 @@ import ProjectItem from "./ProjectItem";
 import kanpaiListImg from "../../public/assets/projects/kanpaiList.png";
 import cafeReservationAdminImg from "../../public/assets/projects/cafeReservationAdmin.png";
 import cafeReservationImg from "../../public/assets/projects/cafeReservation.png";
-import comingSoonImg from "../../public/assets/projects/comingSoon.jpg";
 import inventorySystemImg from "../../public/assets/projects/inventorySystem.png";
 
 function Projects() {
   return (
     <div id="projects" className="w-full">
       <div className="mx-auto max-w-[1240px] px-2 py-16">
-        <p className="text-xl uppercase tracking-widest text-[#5651e5]">
+        <p className="text-xl uppercase tracking-widest text-[#990000]">
           Projects
         </p>
         <h2 className="py-4">What I've Built</h2>
