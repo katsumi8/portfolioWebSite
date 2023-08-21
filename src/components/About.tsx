@@ -17,11 +17,11 @@ function About() {
           <p className="py-2 text-gray-600">
             I build full stack applications. I'm passionate about learning new
             technologies and understand there is more than one way to accomplish
-            a Problem Solving. Though I don't have experience in working as a
+            a Problem Solving. I have experience in working as a full-stack
             developer, I build full stack applications using NextJS, ExpressJS,
-            GraphQL, Prisma and I am a quick learner and can pick up new tech
-            stacks as needed. I believe that being a great developer is not only
-            coding, but also understanding a core issue for the Problem Solving.
+            Prisma and I am a quick learner and can pick up new tech stacks as
+            needed. I believe that being a great developer is not only coding,
+            but also understanding a core issue for the Problem Solving.
           </p>
           <p className="py-2 text-gray-600">
             I started my career as consultant in 2017 implementing SAP, managing
