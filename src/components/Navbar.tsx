@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-import NavLogoImg from "../../public/assets/navLogo.jpg";
+import NavLogoImg from "../../public/assets/navLogo.png";
 import { BackGroundColor } from "@src/types/state";
 
 function Navbar() {
